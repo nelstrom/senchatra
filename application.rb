@@ -3,7 +3,13 @@ require 'sinatra'
 
 helpers do
   def templates
-    "list templates here"
+    templates = []
+    Dir.glob("templates/**").each do |template|
+      name = File.basename(template, ".html")
+      content = open(template).read
+      templates << "<textarea id='#{name}' class='x-hidden-display'>#{content}</textarea>"
+    end
+    templates.join("\n")
   end
 end
 
