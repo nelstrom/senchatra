@@ -2,7 +2,7 @@
 dir = File.dirname(__FILE__)
 
 # Load the sencha-touch framework automatically.
-load File.join(dir, 'sencha')
+load File.join(dir, 'sencha-1.0.1a')
 
 # Compass configurations
 sass_path    = dir
