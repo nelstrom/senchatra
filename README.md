@@ -1,4 +1,7 @@
-Senchatra is a simple Sinatra application that takes some of the drudge work out of working with Sencha Touch.
+Senchatra is a simple Sinatra application that takes some of the drudge work out of working with Sencha Touch. It provides these conveniences:
+
+* contents of .html files in the `templates` directory are inserted into the index.html file, wrapped in a `<textarea>` tag with `display:none;`.
+* `<script>` tags are auto-generated for all .js files in the `public/app` directory.
 
 ## Setup
 
