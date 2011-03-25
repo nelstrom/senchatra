@@ -3,7 +3,7 @@ setup do
 end
 
 tab "Server" do
-  run "ruby application.rb -p4000"
+  run "ruby application.rb"
 end
 
 tab "Compass" do
