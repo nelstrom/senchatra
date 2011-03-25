@@ -1,0 +1,12 @@
+setup do
+  run "bundle install"
+end
+
+tab "Server" do
+  run "ruby application.rb -p4000"
+end
+
+tab "Compass" do
+  run "cd theming"
+  run "compass watch"
+end
